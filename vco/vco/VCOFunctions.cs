@@ -23,7 +23,7 @@ namespace vco
 
         public static bool IsVCOLoaded()
         {
-            var vcoDLC = GetHashKey("vicecity"); // We are storing this information for later use. No need to use more computer power to constantly get the hash key of the dlc.
+            var vcoDLC = GetHashKey("spvco"); // We are storing this information for later use. No need to use more computer power to constantly get the hash key of the dlc.
 
             if (Function.Call<bool>(Hash.IS_DLC_PRESENT, vcoDLC))
             {
